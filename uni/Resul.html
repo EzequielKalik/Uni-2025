@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultados de búsqueda - Uni</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f6f8;
+      color: #1a1a1a;
+    }
+    header {
+      background-color: #002855;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .search-title {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
+    .search-result {
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+    .search-result h3 {
+      margin-top: 0;
+      color: #003366;
+    }
+    .search-result p {
+      margin: 0.4rem 0;
+      color: #444;
+    }
+    .tag {
+      display: inline-block;
+      background-color: #e6f0ff;
+      color: #003366;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      margin-right: 0.5rem;
+    }
+    .filters {
+      margin-bottom: 2rem;
+    }
+    .filters input {
+      padding: 0.6rem;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    footer {
+      background-color: #001f3f;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🎓 Uni</div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Carreras</a>
+      <a href="#">Universidades</a>
+      <a href="#">Test</a>
+      <a href="#">Perfil</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="filters">
+      <input type="text" placeholder="Buscar otra carrera o universidad...">
+    </div>
+
+    <div class="search-title">Resultados para "Ingeniería":</div>
+
+    <div class="search-result">
+      <h3>Ingeniería en Sistemas</h3>
+      <p><strong>Universidad:</strong> UTN - Universidad Tecnológica Nacional</p>
+      <p><strong>Duración:</strong> 5 años</p>
+      <p><strong>Tipo:</strong> Presencial</p>
+      <div>
+        <span class="tag">Tecnología</span>
+        <span class="tag">Computación</span>
+      </div>
+    </div>
+
+    <div class="search-result">
+      <h3>Ingeniería Industrial</h3>
+      <p><strong>Universidad:</strong> UBA - Universidad de Buenos Aires</p>
+      <p><strong>Duración:</strong> 6 años</p>
+      <p><strong>Tipo:</strong> Presencial</p>
+      <div>
+        <span class="tag">Gestión</span>
+        <span class="tag">Producción</span>
+      </div>
+    </div>
+
+    <div class="search-result">
+      <h3>Ingeniería Biomédica</h3>
+      <p><strong>Universidad:</strong> Instituto Tecnológico de Buenos Aires (ITBA)</p>
+      <p><strong>Duración:</strong> 5 años</p>
+      <p><strong>Tipo:</strong> Presencial</p>
+      <div>
+        <span class="tag">Salud</span>
+        <span class="tag">Tecnología</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Uni | Contacto: info@uni.com | Redes sociales
+  </footer>
+</body>
+</html>

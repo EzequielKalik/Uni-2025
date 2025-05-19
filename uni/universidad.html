@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UBA - Universidad de Buenos Aires</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header, footer {
+      background-color: #002b5b;
+      color: white;
+      padding: 16px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 16px;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+    .hero img {
+      border-radius: 8px;
+      max-width: 300px;
+      height: auto;
+    }
+    .hero-content h1 {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+    .tags {
+      margin-top: 8px;
+    }
+    .tags span {
+      background: #e0ecff;
+      color: #004a9f;
+      padding: 4px 10px;
+      margin-right: 6px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    section {
+      margin-top: 48px;
+    }
+    h2 {
+      font-size: 24px;
+      margin-bottom: 16px;
+      color: #002b5b;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background-color: #0056a8;
+      color: white;
+      padding: 16px;
+      border-radius: 6px;
+      text-align: center;
+      transition: background-color 0.2s;
+    }
+    .card:hover {
+      background-color: #004080;
+      cursor: pointer;
+    }
+    .info-section {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .info-box {
+      flex: 1;
+      background: white;
+      border: 1px solid #ddd;
+      padding: 16px;
+      border-radius: 6px;
+    }
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      gap: 16px;
+    }
+    .carousel img {
+      height: 100px;
+      border-radius: 8px;
+    }
+    .opinions {
+      margin-top: 32px;
+    }
+    .opinion {
+      background: #fff;
+      border-radius: 6px;
+      padding: 12px;
+      margin-top: 8px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 64px;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div><strong>Uni.</strong></div>
+      <div>
+        <a href="#">Inicio</a>
+        <a href="#">Carreras</a>
+        <a href="#">Test vocacional</a>
+        <a href="#">Perfil</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <!-- Hero / Encabezado -->
+    <div class="hero">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/UBA_logo.svg/1200px-UBA_logo.svg.png" alt="Logo UBA">
+      <div class="hero-content">
+        <h1>Universidad de Buenos Aires</h1>
+        <p>La UBA es una de las universidades más prestigiosas de América Latina, con una amplia oferta académica y una fuerte presencia internacional.</p>
+        <div class="tags">
+          <span>Buenos Aires</span>
+          <span>Universidad pública</span>
+          <span>Presencial</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carreras -->
+    <section>
+      <h2>Carreras de grado</h2>
+      <div class="cards">
+        <div class="card">Abogacía</div>
+        <div class="card">Medicina</div>
+        <div class="card">Ingeniería informática</div>
+        <div class="card">Arquitectura</div>
+        <div class="card">Ciencias económicas</div>
+        <div class="card">Psicología</div>
+        <div class="card">Diseño gráfico</div>
+        <div class="card">Sociología</div>
+      </div>
+    </section>
+
+    <!-- Condiciones de ingreso -->
+    <section>
+      <h2>Condiciones de ingreso</h2>
+      <div class="info-section">
+        <div class="info-box">
+          <h3>Ingreso CBC</h3>
+          <p>Para ingresar a la UBA es obligatorio cursar el Ciclo Básico Común (CBC), que varía según la carrera elegida.</p>
+        </div>
+        <div class="info-box">
+          <h3>Documentación</h3>
+          <p>Se requiere título secundario, DNI actualizado y completar el formulario de preinscripción online.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Becas y financiación -->
+    <section>
+      <h2>Financiamiento y becas</h2>
+      <div class="carousel">
+        <img src="https://www.argentina.gob.ar/sites/default/files/becas-progresar-logo.jpg" alt="Progresar">
+        <img src="https://www.educ.ar/media/images/Beca_Egresar.width-500.png" alt="Beca Egresar">
+        <img src="https://i.ytimg.com/vi/mZOnycHRZ0g/maxresdefault.jpg" alt="Becas Futuro">
+      </div>
+    </section>
+
+    <!-- Opiniones -->
+    <section class="opinions">
+      <h2>Opiniones</h2>
+      <div class="opinion">
+        <strong>@lucas.alvarez</strong> – “Una universidad excelente. La calidad de profesores y el compromiso académico es impresionante.”
+      </div>
+      <div class="opinion">
+        <strong>@carla.martinez</strong> – “La UBA me abrió muchas puertas laborales. La recomiendo totalmente.”
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2025 Uni. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>

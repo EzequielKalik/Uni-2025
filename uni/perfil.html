@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil del Usuario - Uni</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f6f8;
+      color: #1a1a1a;
+    }
+    header {
+      background-color: #002855;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .profile-container {
+      max-width: 960px;
+      margin: 2rem auto;
+      background-color: white;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .profile-header {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 1.5rem;
+    }
+    .profile-header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 2rem;
+    }
+    .profile-info h2 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    .profile-info p {
+      margin: 0.3rem 0;
+      color: #555;
+    }
+    .profile-summary {
+      margin-top: 1.5rem;
+    }
+    .profile-summary h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+    .stats {
+      display: flex;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+    .stat-box {
+      background-color: #e6f0ff;
+      padding: 1rem;
+      border-radius: 8px;
+      flex: 1;
+      text-align: center;
+    }
+    .stat-box h4 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #003366;
+    }
+    .stat-box p {
+      margin: 0.2rem 0 0;
+      color: #555;
+    }
+    .edit-btn {
+      margin-top: 1rem;
+      background-color: #002855;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .posts-section {
+      margin-top: 2rem;
+    }
+    .post-card {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+    footer {
+      background-color: #001f3f;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🎓 Uni</div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Carreras</a>
+      <a href="#">Universidades</a>
+      <a href="#">Test</a>
+      <a href="#">Perfil</a>
+    </nav>
+  </header>
+
+  <div class="profile-container">
+    <div class="profile-header">
+      <img src="https://via.placeholder.com/100" alt="Foto de perfil">
+      <div class="profile-info">
+        <h2>Ciro Ben Dov</h2>
+        <p>Estudiante de Ingeniería en Sistemas</p>
+        <p>Universidad Tecnológica Nacional (UTN)</p>
+      </div>
+    </div>
+
+    <div class="profile-summary">
+      <h3>Sobre mí</h3>
+      <p>Apasionado por la tecnología, los sistemas y la educación. Estoy buscando una carrera que combine creatividad e innovación.</p>
+      <div class="stats">
+        <div class="stat-box">
+          <h4>124</h4>
+          <p>Seguidores</p>
+        </div>
+        <div class="stat-box">
+          <h4>12</h4>
+          <p>Publicaciones</p>
+        </div>
+        <div class="stat-box">
+          <h4>7</h4>
+          <p>Intereses</p>
+        </div>
+      </div>
+      <button class="edit-btn">Editar perfil</button>
+    </div>
+
+    <div class="posts-section">
+      <h3>Mis publicaciones</h3>
+      <div class="post-card">
+        <p><strong>Comparé UTN y UNSAM para Ingeniería. Mi conclusión:</strong> UTN tiene más salida laboral, pero UNSAM ofrece un enfoque más experimental. ¡Recomiendo mirar ambas!</p>
+      </div>
+      <div class="post-card">
+        <p><strong>Nuevo interés:</strong> Ingeniería Biomédica. ¿Alguien más investigando esta carrera?</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Uni | Contacto: info@uni.com | Redes sociales
+  </footer>
+</body>
+</html>
